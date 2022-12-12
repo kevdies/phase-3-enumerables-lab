@@ -21,8 +21,11 @@ end
 
 # given an array of spicy foods, **return an array of hashes**
 # where the heat level of the food is greater than 5
+#filter if heat_level is greater than 5
 def spiciest_foods(spicy_foods)
   # your code here
+  hotDisheArr = spicy_foods.select { |food| food[:heat_level] > 5 }
+  return hotDisheArr
 end
 
 # given an array of spicy foods, **output to the terminal**
