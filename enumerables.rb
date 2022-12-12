@@ -57,7 +57,9 @@ end
 # sorted by heat level from lowest to highest
 def sort_by_heat(spicy_foods)
   # your code here
-  spicy_foods.sort_by
+  spicy_foods.sort_by do |food|
+    food[:heat_level]
+  end
 end
 
 # given an array of spicy foods, output to the terminal ONLY
@@ -72,5 +74,5 @@ end
 # the average heat level of all the spicy foods in the array
 def average_heat_level(spicy_foods)
   # your code here
-  
+
 end
